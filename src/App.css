@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Noto+Serif&family=Noto+Serif+JP:wght@300&family=Open+Sans&family=Raleway&family=Roboto+Serif:opsz,wght@8..144,500&family=Source+Code+Pro&family=Ysabeau+Office:wght@200&display=swap');
+
+
+body{
+    background-color:#1d1e22;
+    color: white;
+    text-align: center;
+}
+input{
+width: 40vw;
+padding: 15px;
+margin: 50px;
+border: none;
+outline: none;
+font-size: 1rem;
+text-align: center;
+}
+#movies-container{
+    width:90%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.movie-wrapper{
+    width: 15%;
+    margin: 0px 20px;
+    /* background-image: url(https://image.tmdb.org/t/p/w300_and_h450_bestv2/cHNqobjzfLj88lpIYqkZpecwQEC.jpg); */
+}
+.image-card{
+    width: 100%;
+ opacity: 10;  
+ background: fixed; 
+ margin: 0;
+}
+
+.content{
+    visibility: hidden;
+    position: relative;
+    bottom: 150px;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: normal;
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    font-variant: small-caps;
+    margin: 0;
+    font-family:sans-serif;
+    font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-style: normal;
+  margin: 0;
+  visibility: hidden;
+  position: relative;
+  bottom: 150px;
+}
+
+.movie-wrapper:hover .card-title{
+    visibility: visible;
+    background-color:white;
+    color: black;
+}
+.movie-wrapper:hover .image-card{
+    visibility: hidden;
+    background-color:white;
+    color: black;
+}
